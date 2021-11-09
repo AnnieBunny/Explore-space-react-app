@@ -1,0 +1,67 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 156px;
+    border: 2px solid gray;
+    box-shadow: -1px -1px 4px 2px grey;
+    margin: 0px -202px;
+    border: none;
+    font-family: Monsserat, sans-serif;
+    background-color: #F7F7F7;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: fixed;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin: 0px 5px;
+    padding: 0px 10px;
+    list-style: none;
+    color: #504e4e;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.blog-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 385px;
+    margin: 69px 25px 55px 25px;
+    padding: 0px 50px;
+    background-color: #29394B;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 7px black;
+    position: relative;
+}
+
+.like-btn {
+    color: white;
+    position: absolute;
+    left: 296px;
+    background: red;
+    padding: 8px 29px;
+    border-bottom-left-radius: 28px;
+    border: none;
+}
+
+.details-btn {
+    color: white;
+    position: absolute;
+    left: -3px;
+    background: red;
+    padding: 8px 29px;
+    border-bottom-right-radius: 28px;
+    border: none;
+    text-transform: uppercase;
+}
