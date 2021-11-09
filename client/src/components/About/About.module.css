@@ -1,0 +1,96 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    box-shadow: -20px -16px 20px black;
+    margin-top: 100px;
+    padding: 50px 50px;
+    background-image: url('./stars.jpg');
+    color: wheat;
+    border-radius: 130px;
+    position: relative;
+}
+
+.container-img {
+    max-width: 500px;
+}
+
+.container-img img {
+    width: 100%;
+    border-radius: 100px;
+}
+
+.first-star {
+    left: -382px;
+    font-size: 15px;
+    position: absolute;
+    top: -26px;
+}
+
+.second-star {
+    left: -76px;
+    font-size: 15px;
+    position: absolute;
+    top: 149px;
+}
+
+.third-star {
+    left: 554px;
+    font-size: 15px;
+    position: absolute;
+    top: 431px;
+}
+
+.forth-star {
+    left: 941px;
+    font-size: 15px;
+    position: absolute;
+    top: 570px;
+}
+
+.first-meteor {
+    color: #D8A412;
+    left: 816px;
+    font-size: 159px;
+    position: absolute;
+    top: 12px;
+}
+
+.second-meteor {
+    color: #D8A412;
+    left: -455px;
+    font-size: 159px;
+    position: absolute;
+    top: 344px;
+}
+
+.user-login-register {
+    display: flex;
+    position: absolute;
+    top: 200px;
+    right: -316px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.login-btn,.register-btn {
+    list-style: none;
+    margin-left: 22px;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px 10px;
+    background: #D8A412;
+    border: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.login-btn {
+    top: -50px;
+    position: absolute;
+}

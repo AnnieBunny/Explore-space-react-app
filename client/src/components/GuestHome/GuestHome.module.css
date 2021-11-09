@@ -26,13 +26,19 @@ a {
 .login {
     position: absolute;
     top: 301px;
-    left: -30px;
+    left: -20px;
+}
+
+.about{
+    position: absolute;
+    top: 420px;
+    left: 250px;
 }
 
 .register {
     position: absolute;
     top: 548px;
-    left: 126px;
+    left: -30px;
 }
 
 
@@ -51,8 +57,18 @@ a {
     color: #00ffdc;
     font-size: 126px;
     position: absolute;
-    top: 500px;
-    left: 113px;
+    top: 495px;
+    left: -50px;
+    z-index: -1;
+    text-shadow: 17px 7px 7px black;
+}
+
+.plane-three {
+    color: #00ffdc;
+    font-size: 126px;
+    position: absolute;
+    top: 370px;
+    left: 225px;
     z-index: -1;
     text-shadow: 17px 7px 7px black;
 }
