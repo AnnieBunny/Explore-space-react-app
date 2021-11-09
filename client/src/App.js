@@ -5,6 +5,7 @@ import About from './components/About/About';
 
 import GuestHome from './components/GuestHome/GuestHome'
 import Login from './components/Login/Login';
+import MyPosts from './components/MyPosts/MyPosts';
 import Register from './components/Register/Register';
 import UserHome from './components/UserHome/UserHome';
 
@@ -19,6 +20,8 @@ function App() {
 
 
       <Route exact path="/userHome" element={<UserHome/>}></Route>
+      <Route exact path="/myPosts" element={<MyPosts/>}></Route>
+
 
 
 

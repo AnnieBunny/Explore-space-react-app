@@ -1,9 +1,8 @@
-
-import styles from "./UserHome.module.css";
+import styles from "./MyPosts.module.css";
 import { Link } from 'react-router-dom'
 
 
-const UserHome = () => {
+const MyPosts = () => {
 
 
     return (
@@ -14,7 +13,7 @@ const UserHome = () => {
                 <ul>
 
                     <li>See space now!</li>
-                    <li className={styles['my-posts-btn']}><Link to="/myPosts">My Posts</Link></li>
+                    <li><Link to="/userHome">Posts</Link></li>
                     <li>Add post</li>
                     <li>My Posts</li>
                     <li>Logout</li>
@@ -35,8 +34,8 @@ const UserHome = () => {
                     <p>Acquired certificates and a diploma from the training at SoftUni (Software University) prove the
                         knowledge and skills you have acquired and must be presented to employers.</p>
 
-                    <button className={styles['like-btn']}>LIKE!</button>
-                    <button className={styles['details-btn']}>Details</button>
+                    <button className={styles['edit-btn']}>Edit</button>
+                    <button className={styles['delete-btn']}>Delete</button>
 
 
                 </article>
@@ -48,8 +47,8 @@ const UserHome = () => {
                     <p>Acquired certificates and a diploma from the training at SoftUni (Software University) prove the
                         knowledge and skills you have acquired and must be presented to employers.</p>
 
-                    <button className={styles['like-btn']}>LIKE!</button>
-                    <button className={styles['details-btn']}>Details</button>
+                        <button className={styles['edit-btn']}>Edit</button>
+                    <button className={styles['delete-btn']}>Delete</button>
 
 
 
@@ -63,9 +62,8 @@ const UserHome = () => {
                         knowledge and skills you have acquired and must be presented to employers.Acquired certificates and a diploma from the training at SoftUni (Software University) prove the
                         knowledge and skills you have acquired and must be presented to employers.Acquired certificates and a diploma from the training at SoftUni (Software University) prove the
                         knowledge and skills you have acquired and must be presented to employers.</p>
-
-                    <button className={styles['like-btn']}>LIKE!</button>
-                    <button className={styles['details-btn']}>Details</button>
+                        <button className={styles['edit-btn']}>Edit</button>
+                    <button className={styles['delete-btn']}>Delete</button>
 
 
 
@@ -77,8 +75,8 @@ const UserHome = () => {
 
                     <p>lorem nfjregerkgvne.rugnjrgergeheergerg</p>
 
-                    <button className={styles['like-btn']}>LIKE!</button>
-                    <button className={styles['details-btn']}>Details</button>
+                    <button className={styles['edit-btn']}>Edit</button>
+                    <button className={styles['delete-btn']}>Delete</button>
 
 
 
@@ -89,4 +87,4 @@ const UserHome = () => {
     )
 }
 
-export default UserHome;
+export default MyPosts;

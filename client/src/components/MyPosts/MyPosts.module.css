@@ -27,9 +27,6 @@ li {
     font-weight: 400;
     white-space: nowrap;
 }
-.my-posts-btn{
-    cursor: pointer;
-}
 
 .blog-cards {
     display: flex;
@@ -48,17 +45,18 @@ li {
     position: relative;
 }
 
-.like-btn {
+.edit-btn {
     color: white;
     position: absolute;
-    left: 296px;
+    left: 299px;
     background: red;
     padding: 8px 29px;
     border-bottom-left-radius: 28px;
     border: none;
+    text-transform: uppercase;
 }
 
-.details-btn {
+.delete-btn {
     color: white;
     position: absolute;
     left: -3px;
