@@ -1,5 +1,8 @@
 
 import styles from './GuestHome.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlane } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 const GuestHome =() => {
 
@@ -7,10 +10,11 @@ const GuestHome =() => {
         <>
         <nav>
         <ul className={styles["nav-items"]}>
-            <li className={styles["login"]}><a href="#">Login</a></li>
-            <i className={styles["fas fa-plane"]}></i>
-            <li className={styles["register"]}><a href="#">Register</a></li>
-            <i className={styles["fas fa-plane register"]}></i>
+            <li className={styles["login"]}><Link to="/login">Login</Link></li>
+            <FontAwesomeIcon icon={faPlane}  className={styles["plane-one"]}/>
+            <li className={styles["register"]}><Link to="/register">Register</Link></li>
+            <FontAwesomeIcon icon={faPlane}  className={styles["plane-two"]}/>
+
         </ul>
     </nav>
     <header>
@@ -21,10 +25,10 @@ const GuestHome =() => {
    
     <section className={styles["planets"]}>
         <article className={styles["earth-img"]}>
-            <img src="./images/EARTH.png" alt="earth-img" />
+            <img src="/EARTH.png" alt="earth-img" />
         </article>
         <article className={styles["mars-img"]}>
-            <img src="./images/MARS.png" alt="mars-img" />
+            <img src="/MARS.png" alt="mars-img" />
         </article>
 
     </section>

@@ -1,4 +1,4 @@
-@import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+
 body {
     margin: 0 500px;
     background: rgb(2, 0, 36);
@@ -37,7 +37,7 @@ a {
 
 
 
-.fas.fa-plane {
+.plane-one{
     color: #00ffdc;
     font-size: 126px;
     position: absolute;
@@ -47,7 +47,7 @@ a {
     text-shadow: 17px 7px 7px black;
 }
 
-.fas.fa-plane.register {
+.plane-two {
     color: #00ffdc;
     font-size: 126px;
     position: absolute;
