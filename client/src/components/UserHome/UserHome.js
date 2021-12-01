@@ -1,89 +1,37 @@
 
 import styles from "./UserHome.module.css";
-import { Link } from 'react-router-dom'
 
+import { useEffect, useState } from "react";
+import * as postService from '../../services/postService';
+import PostCard from "../PostCard/PostCard";
 
 const UserHome = () => {
 
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        postService.getAllPosts()
+            .then((res) => {
+
+                setPosts(res)
+            })
+
+
+    }, [])
 
     return (
         <>
-            <nav className={styles['navigation']}>
 
+            {
+                posts.length > 0
+                    ? (
+                        <section className={styles['blog-cards']}>
+                            {posts.map(x => <PostCard key={x._id} post={x}/>)}
+                        </section>
+                    )
+                        : <p>No posts in DB!</p>
+}
 
-                <ul>
-
-                    <li>See space now!</li>
-                    <li className={styles['my-posts-btn']}><Link to="/myPosts">My Posts</Link></li>
-                    <li>Add post</li>
-                    <li>My Posts</li>
-                    <li>Logout</li>
-
-
-
-
-                </ul>
-            </nav>
-
-
-            <section className={styles['blog-cards']}>
-                <article className={styles['card']}>
-                    <h1>
-                        Web Development Certificates
-                    </h1>
-
-                    <p>Acquired certificates and a diploma from the training at SoftUni (Software University) prove the
-                        knowledge and skills you have acquired and must be presented to employers.</p>
-
-                    <button className={styles['like-btn']}>LIKE!</button>
-                    <button className={styles['details-btn']}>Details</button>
-
-
-                </article>
-                <article className={styles['card']}>
-                    <h1>
-                        Web Development Certificates
-                    </h1>
-
-                    <p>Acquired certificates and a diploma from the training at SoftUni (Software University) prove the
-                        knowledge and skills you have acquired and must be presented to employers.</p>
-
-                    <button className={styles['like-btn']}>LIKE!</button>
-                    <button className={styles['details-btn']}>Details</button>
-
-
-
-                </article>
-                <article className={styles['card']}>
-                    <h1>
-                        Web Development Certificates
-                    </h1>
-
-                    <p>Acquired certificates and a diploma from the training at SoftUni (Software University) prove the
-                        knowledge and skills you have acquired and must be presented to employers.Acquired certificates and a diploma from the training at SoftUni (Software University) prove the
-                        knowledge and skills you have acquired and must be presented to employers.Acquired certificates and a diploma from the training at SoftUni (Software University) prove the
-                        knowledge and skills you have acquired and must be presented to employers.</p>
-
-                    <button className={styles['like-btn']}>LIKE!</button>
-                    <button className={styles['details-btn']}>Details</button>
-
-
-
-                </article>
-                <article className={styles['card']}>
-                    <h1>
-                        title
-                    </h1>
-
-                    <p>lorem nfjregerkgvne.rugnjrgergeheergerg</p>
-
-                    <button className={styles['like-btn']}>LIKE!</button>
-                    <button className={styles['details-btn']}>Details</button>
-
-
-
-                </article>
-            </section>
         </>
 
     )

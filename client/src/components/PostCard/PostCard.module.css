@@ -1,0 +1,38 @@
+.my-posts-btn{
+    cursor: pointer;
+}
+
+
+
+.card {
+    width: 385px;
+    margin: 69px 25px 55px 25px;
+    padding: 0px 50px;
+    background-color: #29394B;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 7px black;
+    position: relative;
+}
+
+.like-btn {
+    color: white;
+    position: absolute;
+    left: 296px;
+    background: red;
+    padding: 8px 29px;
+    border-bottom-left-radius: 28px;
+    border: none;
+}
+
+.details-btn {
+    color: white;
+    position: absolute;
+    left: -3px;
+    background: red;
+    padding: 8px 29px;
+    border-bottom-right-radius: 28px;
+    border: none;
+    text-transform: uppercase;
+}

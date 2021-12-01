@@ -13,32 +13,12 @@ form {
 }
 
 .form {
-    margin-top: 150px;
+    margin-top: 26px;
     padding: 90px 150px;
     background: #E6E6E6;
     box-shadow: -1px 0px 20px 7px black;
     border-radius: 6px;
-}
-
-
-
-.rocket-icon {
     position: relative;
-}
-
-.rocket {
-    color: #1379e2;
-    font-size: 120px;
-    position: absolute;
-    left: -43px;
-    bottom: -76px;
-}
-
-.email-info, .password-info {
-    border: none;
-    border-radius: 10px;
-    padding: 3px 35px;
-    margin: 10px;
 }
 
 .submit-button {
@@ -55,4 +35,21 @@ form {
 label{
     font-size: 13.5px;
     font-weight: bold;
+}
+.add-post-title{
+    position: absolute;
+    top: 20px;
+    left: 165px;
+}
+
+.post-text-content{
+    width: 363px;
+    height: 300px;
+}
+
+.post-text-content,.post-title{
+    border: none;
+    border-radius: 10px;
+    padding: 3px 35px;
+    margin: 10px;
 }

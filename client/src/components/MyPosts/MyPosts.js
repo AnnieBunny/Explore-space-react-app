@@ -7,22 +7,7 @@ const MyPosts = () => {
 
     return (
         <>
-            <nav className={styles['navigation']}>
-
-
-                <ul>
-
-                    <li>See space now!</li>
-                    <li><Link to="/userHome">Posts</Link></li>
-                    <li>Add post</li>
-                    <li>My Posts</li>
-                    <li>Logout</li>
-
-
-
-
-                </ul>
-            </nav>
+        
 
 
             <section className={styles['blog-cards']}>

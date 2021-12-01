@@ -1,8 +1,26 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faRocket } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRocket } from '@fortawesome/free-solid-svg-icons';
 import styles from './Register.module.css';
+import * as authService from '../../services/authService';
+import { useNavigate } from 'react-router';
+
 
 const Register = () => {
+
+    let navigate = useNavigate();
+
+    const onRegisterSubmit = (e) => {
+        e.preventDefault();
+
+        let { email, password } = Object.fromEntries(new FormData(e.currentTarget));
+
+        authService.register(email, password)   
+            .then(authData => {
+                // login(authData);
+                
+                navigate('/userHome');
+            });
+    }
 
     return(
      <>
@@ -11,14 +29,14 @@ const Register = () => {
    </article>
 
         <article className={styles["form"]}>
-            <form>
+            <form onSubmit={onRegisterSubmit}>
                 <label for="email-info-register">Email</label>
-                <input type="text" className={styles["email-info-register"]}/>
+                <input type="text" name="email" className={styles["email-info-register"]}/>
                 <label for="password-info-register">Password</label>
-                <input type="password" className={styles["password-info-register"]}/>
+                <input type="password"  name="password"className={styles["password-info-register"]}/>
                 <label for="repeat-password-info-register">Repeat Password</label>
                 <input type="repeat-password" className={styles["password-info-register"]}/>
-                <button className={styles["submit-button-register"]}>Submit</button>
+                <button type="submit" className={styles["submit-button-register"]}>Submit</button>
             </form>
         </article>
      </>

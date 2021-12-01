@@ -8,11 +8,15 @@ import Login from './components/Login/Login';
 import MyPosts from './components/MyPosts/MyPosts';
 import Register from './components/Register/Register';
 import UserHome from './components/UserHome/UserHome';
+import Create from './components/Create/Create';
+import Navigation from './components/Navigation/Navigation';
 
 function App() {
   return (
     <div className="App">
+<Navigation />
     <Routes>
+
       <Route exact path="/" element={<GuestHome/>}></Route>
       <Route exact path="/login" element={<Login/>}></Route>
       <Route exact path="/register" element={<Register/>}></Route>
@@ -21,6 +25,8 @@ function App() {
 
       <Route exact path="/userHome" element={<UserHome/>}></Route>
       <Route exact path="/myPosts" element={<MyPosts/>}></Route>
+      <Route exact path="/create" element={<Create/>}></Route>
+
 
 
 
