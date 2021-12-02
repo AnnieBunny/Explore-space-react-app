@@ -10,12 +10,12 @@ const GuestHome = () => {
         <>
             <nav>
                 <ul className={styles["nav-items"]}>
-                    <li className={styles["login"]}><Link to="/login">Login</Link></li>
+                    <li className={styles["login"]}><Link to="/login"><strong>Login</strong></Link></li>
                     <FontAwesomeIcon icon={faPlane} className={styles["plane-one"]} />
-                    <li className={styles["register"]}><Link to="/register">Register</Link></li>
+                    <li className={styles["register"]}><Link to="/register"><strong>Register</strong></Link></li>
                     <FontAwesomeIcon icon={faPlane} className={styles["plane-two"]} />
 
-                    <li className={styles["about"]}><Link to="/about">About</Link></li>
+                    <li className={styles["about"]}><Link to="/about"><strong>About</strong></Link></li>
                     <FontAwesomeIcon icon={faPlane} className={styles["plane-three"]} />
 
 

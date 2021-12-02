@@ -1,5 +1,53 @@
+.nasa-title{
+    text-align: center;
+    font-size: 23px;
+    color: white;
+    position: absolute;
+    text-shadow: 1px 1px 20px black;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    right:0px;
+    text-transform: uppercase;
+    border: 3px solid;
+    padding: 10px;
+}
+.star-one{
+    font-size: 128px;
+    position: absolute;
+    top: -23px;
+    left: 798px;
+  
+}
 
 
-img{
-    
+.container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.image-container img {
+    width: 500px;
+    position: absolute;
+    right: 298px;
+    top: 144px;
+    border: 6px solid  white
+}
+
+.image-info-container {
+    position: absolute;
+    left: 150px;
+    top: 145px;
+    display: inline-block;
+    border: 2px solid black;
+    box-shadow: 3px -5px 20px 7px black;
+    border-radius: 26px;
+    padding: 10px 30px;
+    background-color:black;
+    color: white;
+
+    font-weight: 200;
+}
+.image-info-container-legend-description{
+   width: 500px;
 }
