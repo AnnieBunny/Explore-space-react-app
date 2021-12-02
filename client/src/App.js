@@ -10,6 +10,7 @@ import Register from './components/Register/Register';
 import UserHome from './components/UserHome/UserHome';
 import Create from './components/Create/Create';
 import Navigation from './components/Navigation/Navigation';
+import NasaSpacePhoto from './components/NasaSpacePhoto/NasaSpacePhoto';
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
       <Route exact path="/userHome" element={<UserHome/>}></Route>
       <Route exact path="/myPosts" element={<MyPosts/>}></Route>
       <Route exact path="/create" element={<Create/>}></Route>
+      <Route exact path="/getSpacePhoto" element={<NasaSpacePhoto/>}></Route>
+
 
 
 

@@ -10,7 +10,7 @@ const Navigation =() =>{
 
         <ul>
 
-            <li>See space now!</li>
+            <li><Link to="/getSpacePhoto">Generate photo from NASA!</Link></li>
             <li className={styles['my-posts-btn']}><Link to="/myPosts">My Posts</Link></li>
             <li><Link to="/create">Add post</Link></li>
             <li><Link to="/userHome">Posts</Link></li>

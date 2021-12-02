@@ -16,7 +16,10 @@
     position: relative;
 }
 
-
+p{
+  
+    overflow-wrap: break-word;
+}
 
 .like-btn {
     color: white;
