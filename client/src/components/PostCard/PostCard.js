@@ -1,5 +1,6 @@
 import styles from './PostCard.module.css';
 
+
 const PostCard = ({post}) => {
 
     return (
@@ -14,7 +15,10 @@ const PostCard = ({post}) => {
             <button className={styles['like-btn']}>LIKE!</button>
             <button className={styles['details-btn']}>Details</button>
 
-
+            <article className={styles['likes']}>
+ 
+            </article>
+        
         </article>
 
     )
