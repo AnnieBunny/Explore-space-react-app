@@ -2,18 +2,25 @@
 import styles from './Create.module.css';
 import { useNavigate } from 'react-router';
 import * as postService from '../../services/postService';
+
+import { useContext } from 'react';
+import { AuthContext } from '../contexts/AuthContext';
 const Create = () => {
+    const { user } = useContext(AuthContext);
+
 
 let navigate = useNavigate();
+let userName = user.email;
 
     let onCreatePostSubmit = (e) => {
         e.preventDefault();
 
         let { title, text } = Object.fromEntries(new FormData(e.currentTarget));
 
-        postService.createPost(title, text)
-            .then(authData => {
-                // login(authData);
+
+        postService.createPost({title, text, userName},user.accessToken)
+            .then((res) => {
+                
 
                 navigate('/userHome');
             });

@@ -1,29 +1,36 @@
-const url = 'http://localhost:3030';
+const url = 'http://localhost:3030/data';
 
 
 export const getAllPosts = async () => {
 
-    let response = await fetch(`${url}/jsonstore/posts`)
+
+    let response = await fetch(`${url}/posts`)
 
     let posts = await response.json();
 
     let result = Object.values(posts)
+
+    console.log(result);
 
     return result; 
 
 
 };
 
-export const createPost = (title, text, likes) => {
+export const createPost = async(postData, token) => {
 
-    return fetch(`${url}/jsonstore/posts`, {
+    let response = await fetch(`${url}/posts`, {
         method: 'POST',
         headers: {
-            'content-type': 'application/json'
+            'content-type': 'application/json',
+            'X-Authorization': token,
         },
-        body: JSON.stringify({ title, text, likes:0 })
-    })
-        .then(res => res.json()); 
+        body: JSON.stringify({...postData, likes: []})
+    });
+
+    let result = await response.json();
+
+    return result;
 
 
 };

@@ -14,12 +14,13 @@ const UserHome = () => {
     useEffect(() => {
         postService.getAllPosts()
             .then((res) => {
-
+               
                 setPosts(res)
             })
+            .catch((err) => console.log(err));
 
 
-    }, [])
+    }, []);
 
     return (
         <>
@@ -37,9 +38,9 @@ const UserHome = () => {
                         <>
                             <p className={styles['no-post-text']}>No posts here!</p>
                             <p className={styles['no-post-text']}>Make first post!</p>
-                     
+
                             <article className={styles['btn-container']} >
-                           <Link className={styles['add-new-post-btn']} to="/create">ADD POST</Link>
+                                <Link className={styles['add-new-post-btn']} to="/create">ADD POST</Link>
 
                             </article>
                         </>
