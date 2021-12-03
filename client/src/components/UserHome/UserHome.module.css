@@ -1,5 +1,26 @@
-
 .blog-cards {
     display: flex;
     flex-direction: column;
+}
+
+.no-post-text {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 0px 1px 4px #26fb2d;
+
+}
+
+.btn-container {
+    text-align: center;
+}  
+
+.add-new-post-btn {
+    background-color: black;
+    color: wheat;
+    border: none;
+    border-radius:103px;
+    font-size:20px;
+
+    padding: 20px 30px;
 }
