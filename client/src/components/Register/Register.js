@@ -3,9 +3,10 @@ import { faRocket } from '@fortawesome/free-solid-svg-icons';
 import styles from './Register.module.css';
 import * as authService from '../../services/authService';
 import { useNavigate } from 'react-router';
-
-
+import { useContext } from 'react';
+import { AuthContext } from '../contexts/AuthContext';
 const Register = () => {
+    const { login } = useContext(AuthContext);
 
     let navigate = useNavigate();
 
@@ -16,7 +17,7 @@ const Register = () => {
 
         authService.register(email, password)   
             .then(authData => {
-                // login(authData);
+                login(authData);
                 
                 navigate('/userHome');
             });

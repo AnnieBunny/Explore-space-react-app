@@ -1,26 +1,37 @@
 
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { AuthContext } from '../contexts/AuthContext';
 import styles from './Navigation.module.css'
-const Navigation =() =>{
+const Navigation = () => {
+    const { user } = useContext(AuthContext);
+    return (
 
-    return(
-        
-        <nav className={styles['navigation']}>
+        <>
+
+            {user.email
+                ? (
+                    <>
+                        <nav className={styles['navigation']}>
+                            <ul>
+
+                                <li><Link to="/getSpacePhoto">Generate photo from NASA!</Link></li>
+                                <li className={styles['my-posts-btn']}><Link to="/myPosts">My Posts</Link></li>
+                                <li><Link to="/create">Add post</Link></li>
+                                <li><Link to="/userHome">Posts</Link></li>
+                                <li><Link to="/logout">Logout</Link></li>
 
 
-        <ul>
-
-            <li><Link to="/getSpacePhoto">Generate photo from NASA!</Link></li>
-            <li className={styles['my-posts-btn']}><Link to="/myPosts">My Posts</Link></li>
-            <li><Link to="/create">Add post</Link></li>
-            <li><Link to="/userHome">Posts</Link></li>
-            <li>Logout</li>
 
 
+                            </ul>
+                        </nav>
+                    </>
+                )
+                : ''
+            }
+        </>
 
-
-        </ul>
-    </nav>
     )
 }
 

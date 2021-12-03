@@ -24,7 +24,19 @@ export const login = (email, password) => {
         },
         body: JSON.stringify({ email, password })
     })
-        .then(res => res.json()); 
+        .then(res => res.json())
+        .catch((err)=> console.log(err))
 
 
-}
+};
+
+
+export const logout = (token) => {
+    return fetch(`${url}/users/logout`, {
+        headers: {
+            'X-Authorization': token,
+        }
+    })
+};
+
+

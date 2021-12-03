@@ -1,12 +1,17 @@
 
+
 import styles from './Login.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRocket } from '@fortawesome/free-solid-svg-icons'
+
+import { useContext } from 'react';
+
 import * as authService from '../../services/authService';
 import { useNavigate } from 'react-router';
-
+import { AuthContext } from '../contexts/AuthContext';
 
 const Login = () => {
+    const { login } = useContext(AuthContext);
 
     let navigate = useNavigate();
     const onLoginSubmit = (e) => {
@@ -16,10 +21,12 @@ const Login = () => {
 
         authService.login(email, password)   
             .then(authData => {
-                // login(authData);
+                console.log(authData)
+               login(authData);
                 
                 navigate('/userHome');
-            });
+            })
+            .catch((err)=>console.log(err))
     }
 
     return(
@@ -31,9 +38,9 @@ const Login = () => {
             <article className={styles["form"]}>
                 <form onSubmit={onLoginSubmit}>
                     <label for="email-info">Email</label>
-                    <input type="text" className={styles["email-info"]}/>
+                    <input type="text" className={styles["email-info"]} name="email"/>
                     <label for="password-info">Password</label>
-                    <input type="password" className={styles["password-info"]}/>
+                    <input type="password" className={styles["password-info"]} name="password"/>
                     <button type="submit" className={styles["submit-button"]}>Submit</button>
                 </form>
             </article>
