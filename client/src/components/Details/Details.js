@@ -29,7 +29,7 @@ const Details = () => {
             </article>
             <article className={styles['details-post-ownerInfo']} >
                 <p className={styles['details-post-username']}><strong>Authour: </strong> {post.userName}</p>
-                {/* <p className={styles['details-post-created']}><strong>Date: </strong>{post.createdOn}</p> */}
+              
                 <p className={styles['details-post-likes']}>Likes: {post.likes?.length}</p>
 
             </article>

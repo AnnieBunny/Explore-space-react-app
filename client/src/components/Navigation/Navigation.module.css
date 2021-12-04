@@ -27,3 +27,12 @@ li {
     font-weight: 400;
     white-space: nowrap;
 }
+
+.active-class {
+    color: red;
+  }
+  
+  .active {
+    color: green;
+  }
+  

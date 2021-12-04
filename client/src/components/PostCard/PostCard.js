@@ -10,7 +10,7 @@ const PostCard = ({post}) => {
                {post.title}
             </h1>
 
-            <p>{post.text}</p>
+            <p  className={styles['text']} >{post.text}</p>
 
       
             <button className={styles['details-btn']}><Link className="button" to={`/details/${post._id}`}>Details</Link></button>

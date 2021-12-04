@@ -16,9 +16,14 @@
     position: relative;
 }
 
-p{
+.text{
   
-    overflow-wrap: break-word;
+    white-space: nowrap; 
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 315px;
+    
 }
 
 .like-btn {
