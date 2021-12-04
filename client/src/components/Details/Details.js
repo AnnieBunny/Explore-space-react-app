@@ -12,19 +12,11 @@ const Details = () => {
                     he overflow property specifies what should happen if content overflows an element's box.
                     This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.
                     Note: The overflow property only works for block elements with a specified height.
-                    Default value:	visible
-                    Inherited:	no
-                    Animatable:	no. Read about animatable
-                    Version:	CSS2
-                    JavaScript syntax:	object.style.overflow="scroll"
                     he overflow property specifies what should happen if content overflows an element's box.
                     This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.
+                    Note: The overflow property only works for block elements with a specified height. he overflow property specifies what should happen if content overflows an element's box.
+                    This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.
                     Note: The overflow property only works for block elements with a specified height.
-                    Default value:	visible
-                    Inherited:	no
-                    Animatable:	no. Read about animatable
-                    Version:	CSS2
-                    JavaScript syntax:	object.style.overflow="scroll"
 
                 </p>
 

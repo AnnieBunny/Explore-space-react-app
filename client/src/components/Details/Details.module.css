@@ -14,9 +14,10 @@
     margin: 10px 0px;
     width: 640px;
     height: 190px;
-    overflow: scroll;
-    background-color: rgb(235, 235, 235);
+    overflow: auto;
+    background-color: #fafafa;
     padding: 10px 10px;
+    border-radius: 6px;
 }
 .details-post-btn-container{
     margin-top: 5px;
