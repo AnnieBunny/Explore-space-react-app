@@ -34,3 +34,10 @@ export const createPost = async(postData, token) => {
 
 
 };
+
+export const getOne = (postId) => {
+
+        return fetch(`${url}/posts/${postId}`)
+            .then(res => res.json())
+    
+}

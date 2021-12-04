@@ -1,30 +1,36 @@
 
 import styles from './Details.module.css';
-
+import { useParams } from 'react-router';
+import { useState, useEffect } from 'react';
+import * as postService from '../../services/postService'
 const Details = () => {
 
+
+    const { postId } = useParams();
+    const [post, setPost] = useState({});
+
+    useEffect(() => {
+        postService.getOne(postId)
+            .then(postResult => {
+                console.log(postResult);
+                setPost(postResult);
+            })
+    }, [postId]);
     return (
 
         <section className={styles['details-container']}>
             <article className={styles['details-post']}>
-                <p className={styles['details-post-title']}>Definition and Usage</p>
+                <p className={styles['details-post-title']}>{post.title}</p>
                 <p className={styles['details-post-text']}>
-                    he overflow property specifies what should happen if content overflows an element's box.
-                    This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.
-                    Note: The overflow property only works for block elements with a specified height.
-                    he overflow property specifies what should happen if content overflows an element's box.
-                    This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.
-                    Note: The overflow property only works for block elements with a specified height. he overflow property specifies what should happen if content overflows an element's box.
-                    This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.
-                    Note: The overflow property only works for block elements with a specified height.
+                   {post.text}
 
                 </p>
 
             </article>
             <article className={styles['details-post-ownerInfo']} >
-                <p className={styles['details-post-username']}><strong>Authour: </strong> ani@abv.bg</p>
-                <p className={styles['details-post-created']}><strong>Date: </strong>12.12.1212</p>
-                <p className={styles['details-post-likes']}>Likes: 8</p>
+                <p className={styles['details-post-username']}><strong>Authour: </strong> {post.userName}</p>
+                {/* <p className={styles['details-post-created']}><strong>Date: </strong>{post.createdOn}</p> */}
+                <p className={styles['details-post-likes']}>Likes: {post.likes?.length}</p>
 
             </article>
 

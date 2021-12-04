@@ -50,7 +50,7 @@ function App() {
 
         <Route exact path="/userHome" element={<UserHome />}></Route>
         <Route exact path="/myPosts" element={<MyPosts />}></Route>
-        <Route exact path="/details" element={<Details />}></Route>
+        <Route exact path="/details/:postId" element={<Details />}></Route>
 
         <Route exact path="/create" element={<Create />}></Route>
         <Route exact path="/getSpacePhoto" element={<NasaSpacePhoto />}></Route>

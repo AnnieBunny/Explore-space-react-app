@@ -1,5 +1,5 @@
 import styles from './PostCard.module.css';
-
+import { Link } from 'react-router-dom';
 
 const PostCard = ({post}) => {
 
@@ -12,12 +12,10 @@ const PostCard = ({post}) => {
 
             <p>{post.text}</p>
 
-            <button className={styles['like-btn']}>LIKE!</button>
-            <button className={styles['details-btn']}>Details</button>
+      
+            <button className={styles['details-btn']}><Link className="button" to={`/details/${post._id}`}>Details</Link></button>
 
-            <article className={styles['likes']}>
- 
-            </article>
+          
         
         </article>
 
