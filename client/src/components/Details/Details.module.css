@@ -1,0 +1,53 @@
+.details-container {
+    padding: 40px 100px;
+    margin: 50px -200px;
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+
+.details-post-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.details-post-text {
+    margin: 10px 0px;
+    width: 640px;
+    height: 190px;
+    overflow: scroll;
+    background-color: rgb(235, 235, 235);
+    padding: 10px 10px;
+}
+.details-post-btn-container{
+    margin-top: 5px;
+}
+.edit-btn, .delete-btn, .like-btn, .back-btn {
+    padding: 8px 35px;
+    border-radius: 25px;
+    margin-right: 5px;
+    font-size: 14px;
+    border: none;
+}
+
+.edit-btn{
+    background-color: orange;
+
+    color: white;
+}
+button:hover{
+    background-color: yellow;
+cursor: pointer;
+    color: black;
+}
+.delete-btn{
+    background-color: red;
+    color: white; 
+}
+.like-btn{
+    background-color: blue;
+    color: white; 
+}
+.back-btn{
+    background-color: rgb(5, 5, 2);
+    color: white; 
+}
