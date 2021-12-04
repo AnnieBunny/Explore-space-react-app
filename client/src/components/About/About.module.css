@@ -4,15 +4,17 @@
 }
 
 .container {
-    box-shadow: -20px -16px 20px black;
+    /* box-shadow: -20px -16px 20px black; */
     margin-top: 100px;
     padding: 50px 50px;
-    background-image: url('./stars.jpg');
-    color: wheat;
+    /* background-image: url('./stars.jpg'); */
+    /* color: wheat; */
     border-radius: 130px;
     position: relative;
 }
-
+.carousel-container{
+    width: 300px;
+}
 .container-img {
     max-width: 500px;
 }
