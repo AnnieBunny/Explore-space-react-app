@@ -22,19 +22,19 @@ const About = () => {
                     <Carousel fade>
                         <Carousel.Item>
                             <img
-                                className="d-block w-100"
-                                src="https://i.natgeofe.com/n/46b07b5e-1264-42e1-ae4b-8a021226e2d0/domestic-cat_thumb_square.jpg"
+                                className="d-block w-100 h-100"
+                                src="https://www.indivstock.com/static21/preview2/stoc-229022.jpg"
                                 alt="First slide"
                             />
                             <Carousel.Caption>
-                                <h3>First slide label</h3>
+                                <h3 className={styles['first-slide-label']}>First slide label</h3>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
-                                className="d-block w-100"
-                                src="https://cdn.mos.cms.futurecdn.net/KYEJp9vem3QQFGhi25SYx4-1200-80.jpg"
+                                className="d-block w-100 h-100"
+                                src="https://c4.wallpaperflare.com/wallpaper/967/372/978/gray-simple-background-gradient-wallpaper-thumb.jpg"
                                 alt="Second slide"
                             />
 
@@ -45,8 +45,8 @@ const About = () => {
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
-                                className="d-block w-100"
-                                src="https://media.wired.co.uk/photos/60c8730fa81eb7f50b44037e/3:2/w_3329,h_2219,c_limit/1521-WIRED-Cat.jpeg"
+                                className="d-block w-100 h-100"
+                                src="https://www.indivstock.com/static21/preview2/stoc-229022.jpg"
                                 alt="Third slide"
                             />
 

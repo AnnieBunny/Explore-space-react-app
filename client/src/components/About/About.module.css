@@ -16,7 +16,7 @@ body{
     position: relative;
 }
 .carousel-container{
-    width: 300px;
+    width: 500px;
 }
 .container-img {
     max-width: 500px;
@@ -105,4 +105,8 @@ a {
 .login-btn {
     top: -50px;
     position: absolute;
+}
+
+.first-slide-label{
+    color: black;
 }
