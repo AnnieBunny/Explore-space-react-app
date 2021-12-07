@@ -1,9 +1,10 @@
 
 body {
     margin: 0 500px;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 8%, rgba(144, 10, 207, 1) 56%, rgba(0, 48, 255, 0.8886905103838411) 94%);
+    /* background: rgb(2, 0, 36); */
+    /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 8%, rgba(144, 10, 207, 1) 56%, rgba(0, 48, 255, 0.8886905103838411) 94%); */
     font-family: Helvetica, sans-serif;
+    background-color: black;
 }
 
 .nav-items {
@@ -19,7 +20,7 @@ li {
 
 .login {
     position: absolute;
-    top: 301px;
+    top: 289px;
     left: -20px;
     
 }
@@ -27,20 +28,20 @@ li {
 
 .about{
     position: absolute;
-    top: 420px;
+    top:408px;
     left: 250px;
 }
 
 .register {
     position: absolute;
-    top: 548px;
+    top: 532px;
     left: -30px;
 }
 
 
 
 .plane-one{
-    color: #00ffdc;
+    color: #FFFFFF;
     font-size: 126px;
     position: absolute;
     top: 253px;
@@ -50,7 +51,8 @@ li {
 }
 
 .plane-two {
-    color: #00ffdc;
+        color: #FFFFFF;
+
     font-size: 126px;
     position: absolute;
     top: 495px;
@@ -60,7 +62,8 @@ li {
 }
 
 .plane-three {
-    color: #00ffdc;
+        color: #FFFFFF;
+
     font-size: 126px;
     position: absolute;
     top: 370px;
@@ -71,7 +74,8 @@ li {
 
 .title {
     font-size: 61px;
-    color: #b4ff00;
+    color: #FFFFFF;
+
     letter-spacing: -4px;
     margin-top: 15px;
     text-shadow: -13px -4px 11px black;

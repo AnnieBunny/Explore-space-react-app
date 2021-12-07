@@ -23,7 +23,7 @@ const GuestHome = () => {
             </nav>
             <header>
                 <h1 className={styles["title"]}>
-                    Explore the Space!
+                    Explore Space!
                 </h1>
             </header>
 

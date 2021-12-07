@@ -2,6 +2,9 @@
 * {
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+}
 
 .container {
     /* box-shadow: -20px -16px 20px black; */
@@ -29,6 +32,7 @@
     font-size: 15px;
     position: absolute;
     top: -26px;
+    color: white;
 }
 
 .second-star {
@@ -36,6 +40,8 @@
     font-size: 15px;
     position: absolute;
     top: 149px;
+    color: white;
+
 }
 
 .third-star {
@@ -43,6 +49,8 @@
     font-size: 15px;
     position: absolute;
     top: 431px;
+    color: white;
+
 }
 
 .forth-star {
@@ -50,10 +58,12 @@
     font-size: 15px;
     position: absolute;
     top: 520px;
+    color: white;
+
 }
 
 .first-meteor {
-    color: #D8A412;
+    color: #FFFFFF;
     left: 720px;
     font-size: 159px;
     position: absolute;
@@ -61,7 +71,7 @@
 }
 
 .second-meteor {
-    color: #D8A412;
+    color: #FFFFFF;
     left: -455px;
     font-size: 159px;
     position: absolute;
@@ -83,7 +93,7 @@
     border: 1px solid black;
     border-radius: 50px;
     padding: 10px 10px;
-    background: #D8A412;
+    background:#FFFFFF;
     border: none;
 }
 

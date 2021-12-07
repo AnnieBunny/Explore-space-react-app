@@ -6,7 +6,7 @@ const PostCard = ({post}) => {
     return (
         <article className={styles['card']}>
 
-            <h1>
+            <h1 className={styles['card-title']}>
                {post.title}
             </h1>
 

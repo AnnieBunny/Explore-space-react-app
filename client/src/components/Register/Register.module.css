@@ -1,3 +1,8 @@
+body{
+    background-color: black;
+}
+
+
 form {
     display: flex;
     flex-direction: column;
@@ -24,7 +29,7 @@ form {
     font-size: 120px;
     position: absolute;
     left: -77px;
-    bottom: -224px;
+    bottom: -79px;
 }
 
 .email-info-register, .password-info-register, .repeat-password-info-register {

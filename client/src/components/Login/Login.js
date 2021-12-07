@@ -37,6 +37,7 @@ const Login = () => {
     
             <article className={styles["form"]}>
                 <form onSubmit={onLoginSubmit}>
+                    <h2 className={styles["login-title"]}>LOGIN</h2>
                     <label for="email-info">Email</label>
                     <input type="text" className={styles["email-info"]} name="email"/>
                     <label for="password-info">Password</label>

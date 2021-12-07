@@ -1,3 +1,8 @@
+body{
+    background-color: black;
+}
+
+
 .my-posts-btn{
     cursor: pointer;
 }
@@ -7,7 +12,7 @@
 .card {
     width: 385px;
     margin: 69px 25px 55px 25px;
-    padding: 0px 50px;
+    padding: 50px 50px;
     background-color: #29394B;
     color: white;
     border: none;
@@ -26,6 +31,10 @@
     
 }
 
+.card-title{
+    font-size: 15px;
+}
+
 .like-btn {
     color: white;
     position: absolute;
@@ -39,10 +48,16 @@
 .details-btn {
     color: white;
     position: absolute;
-    left: -3px;
+    left: 1px;
+    top: 165px;
     background: red;
     padding: 8px 29px;
     border-bottom-right-radius: 28px;
     border: none;
     text-transform: uppercase;
+}
+
+.details-btn:hover{
+    background-color: white;
+    color: black;
 }

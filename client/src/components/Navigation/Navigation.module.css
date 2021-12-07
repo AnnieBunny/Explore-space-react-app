@@ -1,3 +1,9 @@
+body{
+    background-color: black;
+}
+
+
+
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -5,7 +11,7 @@
     padding: 4px 156px;
     border: 2px solid gray;
     box-shadow: -1px -1px 4px 2px grey;
-    margin: 0px -202px;
+    margin: 0px -300px;
     border: none;
     font-family: Monsserat, sans-serif;
     background-color: #F7F7F7;
@@ -29,11 +35,15 @@ li {
     border-radius: 10px;
 }
 
-.active-class {
-    color: red;
-  }
-  
-  .active {
-    color: green;
-  }
-  
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: black;
+}
+
+.navigation-username{
+    color: black;
+}

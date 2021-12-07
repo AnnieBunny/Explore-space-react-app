@@ -1,8 +1,9 @@
 body {
     margin: 0 560px;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 8%, rgba(144, 10, 207, 1) 56%, rgba(0, 48, 255, 0.8886905103838411) 94%);
+    /* background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 8%, rgba(144, 10, 207, 1) 56%, rgba(0, 48, 255, 0.8886905103838411) 94%); */
     font-family: Helvetica, sans-serif;
+    background-color: black;
 }
 
 form {
@@ -39,9 +40,8 @@ label{
 .add-post-title{
     position: absolute;
     top: 20px;
-    left: 165px;
+    left: 128px;
 }
-
 .post-text-content{
     width: 363px;
     height: 300px;
@@ -53,3 +53,4 @@ label{
     padding: 3px 35px;
     margin: 10px;
 }
+

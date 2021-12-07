@@ -1,3 +1,8 @@
+body{
+    background-color: black;
+}
+
+
 .nasa-title{
     text-align: center;
     font-size: 23px;
@@ -39,7 +44,7 @@
     left: 150px;
     top: 145px;
     display: inline-block;
-    border: 2px solid black;
+    border: 2px solid white;
     box-shadow: 3px -5px 20px 7px black;
     border-radius: 26px;
     padding: 10px 30px;

@@ -1,8 +1,9 @@
 body {
     margin: 0 560px;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 8%, rgba(144, 10, 207, 1) 56%, rgba(0, 48, 255, 0.8886905103838411) 94%);
+    /* background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 8%, rgba(144, 10, 207, 1) 56%, rgba(0, 48, 255, 0.8886905103838411) 94%); */
     font-family: Helvetica, sans-serif;
+    background-color: black;
 }
 
 form {
@@ -19,6 +20,9 @@ form {
     box-shadow: -1px 0px 20px 7px black;
     border-radius: 6px;
 }
+.login-title{
+    text-align: center;
+}
 
 
 
@@ -31,7 +35,7 @@ form {
     font-size: 120px;
     position: absolute;
     left: -77px;
-    bottom: -224px;
+    bottom: -79px;
 }
 
 .email-info, .password-info {

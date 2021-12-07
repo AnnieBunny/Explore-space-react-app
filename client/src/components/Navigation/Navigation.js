@@ -33,10 +33,10 @@ const Navigation = () => {
                     <>
                         <nav className={styles['navigation']}>
                             <ul>
-
-                                <li style={{ "background-color" : navSpacePhoto ? 'green' : '#F7F7F7'}}><Link to="/getSpacePhoto">Generate photo from NASA!</Link></li>
-                                <li style={{ "background-color" : navAddPost ? 'green' : '#F7F7F7'}}><Link  to="/create">Add post </Link></li>
-                                <li style={{ "background-color" : navPosts ? 'green' : '#F7F7F7'}}><Link to="/userHome">Posts</Link></li>
+                            <li className={styles['navigation-username']}><strong>Аstronaut: </strong>{user.email}</li>
+                                <li style={{ "background-color" : navSpacePhoto ? 'grey' : '#F7F7F7'}}><Link to="/getSpacePhoto">Generate photo from NASA!</Link></li>
+                                <li style={{ "background-color" : navAddPost ? 'grey' : '#F7F7F7'}}><Link  to="/create">Add post </Link></li>
+                                <li style={{ "background-color" : navPosts ? 'grey' : '#F7F7F7'}}><Link to="/userHome">Posts</Link></li>
                                 <li><Link to="/logout">Logout</Link></li>
 
 
