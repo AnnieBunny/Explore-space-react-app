@@ -1,4 +1,4 @@
-const url = 'http://localhost:3030/jsonstore';
+const url = 'http://localhost:3030/data';
 
 
 export const getAllPosts = async () => {
