@@ -19,6 +19,8 @@ const Details = () => {
                 setPost(postResult);
             })
     }, [postId]);
+
+
     return (
 
         <section className={styles['details-container']}>
@@ -32,8 +34,10 @@ const Details = () => {
             </article>
             <article className={styles['details-post-ownerInfo']} >
                 <p className={styles['details-post-username']}><strong>Authour: </strong> {post.userName}</p>
-
+                <p className={styles['details-post-likes']}><strong>Created on: </strong>{`${new Date(post._createdOn)}`.slice(4,24)}</p>
                 <p className={styles['details-post-likes']}>Likes: {post.likes?.length}</p>
+
+
 
             </article>
             {user._id && (user._id == post._ownerId
@@ -51,7 +55,7 @@ const Details = () => {
 
                 <button className={styles['back-btn']}>Back</button>
 
-               
+
             </article>
         </section>
     )
