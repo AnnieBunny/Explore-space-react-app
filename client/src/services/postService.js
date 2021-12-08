@@ -41,3 +41,23 @@ export const getOne = (postId) => {
             .then(res => res.json())
     
 }
+
+export const remove = (postId, token) => {
+    return fetch(`${url}/posts/${postId}`, {
+        method: 'DELETE',
+        headers: {
+            'X-Authorization': token
+        }
+    }).then(res => res.json());
+};
+
+export const like = (postId, post, token) => {
+    return fetch(`${url}/posts/${postId}`, {
+        method: 'PUT',
+        headers: {
+            'content-type': 'application/json',
+            'X-Authorization': token
+        },
+        body: JSON.stringify(post)
+    }).then(res => res.json());
+};

@@ -8,7 +8,7 @@ import { AuthContext } from '../contexts/AuthContext';
 const Details = () => {
 
     const { user } = useContext(AuthContext);
-
+const navigate = useNavigate();
     const { postId } = useParams();
     const [post, setPost] = useState({});
 
@@ -20,6 +20,14 @@ const Details = () => {
             })
     }, [postId]);
 
+   const onRemovePostHandler = (e) => {
+    e.preventDefault();
+
+    postService.remove(postId, user.accessToken)
+    .then(() => {
+        navigate('/userHome')
+    })
+   }
 
     return (
 
@@ -45,7 +53,7 @@ const Details = () => {
                 (
                     <>
                         <button className={styles['edit-btn']}>Edit</button>
-                        <button className={styles['delete-btn']}>Delete</button>
+                        <button onClick={onRemovePostHandler} className={styles['delete-btn']}>Delete</button>
                     </>
                 )
                 : <button className={styles['like-btn']}>Like</button>
