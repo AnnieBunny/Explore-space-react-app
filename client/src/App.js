@@ -5,7 +5,7 @@ import { AuthContext } from './components/contexts/AuthContext';
 import useLocalStorage from './components/hooks/UseLocaleStorage';
 import About from './components/About/About';
 import Details from './components/Details/Details';
-
+import Edit from './components/Edit/Edit';
 
 import GuestHome from './components/GuestHome/GuestHome'
 import Login from './components/Login/Login';
@@ -52,6 +52,8 @@ function App() {
         <Route exact path="/userHome" element={<UserHome />}></Route>
         <Route exact path="/myPosts" element={<MyPosts />}></Route>
         <Route exact path="/details/:postId" element={<Details />}></Route>
+        <Route exact path="/details/edit/:postId" element={<Edit />}></Route>
+
 
         <Route exact path="/create" element={<Create />}></Route>
         <Route exact path="/getSpacePhoto" element={<NasaSpacePhoto />}></Route>

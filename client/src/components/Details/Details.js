@@ -38,6 +38,27 @@ const Details = () => {
             })
     }
 
+
+    const likeButtonClick = () => {
+        if (post.likes.includes(user._id)) {
+            // TODO: add notification
+            console.log('User already liked');
+            return;
+        }
+
+        let likes = [...post.likes, user._id];
+        let likedpost = {...post, likes};
+
+        postService.like(post._id, likedpost, user.accessToken)
+            .then((resData) => {
+                console.log(resData);
+                setPost(oldPost => ({
+                    ...oldPost,
+                    likes,
+                }));
+            })
+    };
+
     return (
 
         <section className={styles['details-container']}>
@@ -61,12 +82,12 @@ const Details = () => {
                 ?
                 (
                     <>
-                        <button className={styles['edit-btn']}>Edit</button>
+                        <button className={styles['edit-btn']}><Link className="button" to={`/details/edit/${post._id}`}>Edit</Link></button>
                         <button onClick={onClickDeletePostButton} className={styles['delete-btn']}>Delete</button>
 
                     </>
                 )
-                : <button className={styles['like-btn']}>Like</button>
+                : <button className={styles['like-btn']} onClick={likeButtonClick}>Like</button>
             )}
 
 
@@ -78,9 +99,9 @@ const Details = () => {
             />
             <article className={styles['details-post-btn-container']}>
 
-                <button onClick={()=>{
+                <button onClick={() => {
                     navigate('/userHome')
-                }}className={styles['back-btn']}>Back</button>
+                }} className={styles['back-btn']}>Back</button>
 
 
             </article>
