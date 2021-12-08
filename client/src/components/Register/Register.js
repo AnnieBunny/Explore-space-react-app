@@ -31,6 +31,7 @@ const Register = () => {
 
         <article className={styles["form"]}>
             <form onSubmit={onRegisterSubmit}>
+            <h2 className={styles["register-title"]}>Register</h2>
                 <label for="email-info-register">Email</label>
                 <input type="text" name="email" className={styles["email-info-register"]}/>
                 <label for="password-info-register">Password</label>

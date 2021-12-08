@@ -18,7 +18,9 @@ form {
     border-radius: 6px;
 }
 
-
+.register-title{
+    text-align: center;
+}
 
 .rocket-icon-register {
     position: relative;

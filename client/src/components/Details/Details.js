@@ -37,9 +37,9 @@ const Details = () => {
             <article className={styles['details-post-btn-container']}>
                 <button className={styles['edit-btn']}>Edit</button>
                 <button className={styles['delete-btn']}>Delete</button>
+                <button className={styles['back-btn']}>Back</button>
 
                 <button className={styles['like-btn']}>Like</button>
-                <button className={styles['back-btn']}>Back</button>
             </article>
         </section>
     )

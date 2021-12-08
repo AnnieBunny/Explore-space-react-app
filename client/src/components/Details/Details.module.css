@@ -6,7 +6,7 @@ body {
 
 .details-container {
     padding: 40px 100px;
-    margin: 50px -200px;
+    margin: 50px -300px;
     background-color: #fafafa;
     border-radius: 5px;
 }
@@ -18,7 +18,7 @@ body {
 
 .details-post-text {
     margin: 10px 0px;
-    width: 640px;
+    width: 870px;
     height: 190px;
     overflow: auto;
     background-color: #fafafa;

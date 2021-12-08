@@ -19,7 +19,7 @@ const About = () => {
 
                 <article className={styles['carousel-container']}>
 
-                    <Carousel fade>
+                    <Carousel className={styles['carousel']} fade>
                         <Carousel.Item>
                             <img
                                 className="d-block w-100 h-100"
@@ -27,8 +27,8 @@ const About = () => {
                                 alt="First slide"
                             />
                             <Carousel.Caption>
-                                <h3 className={styles['first-slide-label']}>First slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                <h3 className={styles['first-slide-label']}>Blog page</h3>
+                                <p>You can post, like, edit and delete your own posts.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -39,8 +39,8 @@ const About = () => {
                             />
 
                             <Carousel.Caption>
-                                <h3 className={styles['first-slide-label']}>Second slide label</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h3 className={styles['first-slide-label']}>NASA picture</h3>
+                                <p>You can see every single day a picture with details from NASA.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>

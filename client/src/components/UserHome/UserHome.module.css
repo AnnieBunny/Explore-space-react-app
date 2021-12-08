@@ -9,6 +9,7 @@ body{
 }
 
 .no-post-text {
+    color: white;
     text-align: center;
     font-size: 50px;
     font-weight: bolder;
@@ -21,8 +22,8 @@ body{
 }  
 
 .add-new-post-btn {
-    background-color: black;
-    color: wheat;
+    background-color: white;
+    color: black;
     border: none;
     border-radius:103px;
     font-size:20px;

@@ -17,6 +17,11 @@ body{
 }
 .carousel-container{
     width: 500px;
+    position: relative;
+}
+.carousel{
+    left: -100px;
+    border-radius: 6px;
 }
 .container-img {
     max-width: 500px;
@@ -113,4 +118,8 @@ a {
 
 .second-slide-label{
     color: white;
+}
+img, svg {
+    vertical-align: middle;
+    border-radius: 50%;
 }
