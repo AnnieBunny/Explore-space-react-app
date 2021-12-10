@@ -61,3 +61,16 @@ export const like = (postId, post, token) => {
         body: JSON.stringify(post)
     }).then(res => res.json());
 };
+
+export const update = (postId, updatedPost,token) =>{
+console.log(updatedPost)
+    return fetch(`${url}/posts/${postId}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-Authorization': token
+
+        },
+        body: JSON.stringify(updatedPost)
+    }).then(res => res.json());
+}

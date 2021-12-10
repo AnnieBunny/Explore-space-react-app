@@ -32,9 +32,9 @@ let userName = user.email;
             <article className={styles["form"]}>
                 <h3 className={styles["add-post-title"]}>ADD POST</h3>
                 <form onSubmit={onCreatePostSubmit}>
-                    <label for="post-title">Title</label>
+                    <label htmlFor="post-title">Title</label>
                     <input type="text" name='title' className={styles["post-title"]} />
-                    <label for="post-text-content">Text</label>
+                    <label htmlFor="post-text-content">Text</label>
                     <textarea name='text' className={styles["post-text-content"]} />
                     <button type="submit" className={styles["submit-button"]}>Submit</button>
                 </form>

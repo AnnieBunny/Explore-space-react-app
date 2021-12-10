@@ -39,35 +39,34 @@ const Details = () => {
     }
 
 
-    const likeButtonClick = () => {
-        if (post.likes.includes(user._id)) {
-            // TODO: add notification
-            console.log('User already liked');
-            return;
-        }
+    // const likeButtonClick = () => {
+    //     if (post.likes.includes(user._id)) {
+    //         // TODO: add notification
+    //         console.log('User already liked');
+    //         return;
+    //     }
 
-        let likes = [...post.likes, user._id];
-        let likedpost = {...post, likes};
+    //     let likes = [...post.likes, user._id];
+    //     let likedpost = {...post, likes};
 
-        postService.like(post._id, likedpost, user.accessToken)
-            .then((resData) => {
-                console.log(resData);
-                setPost(oldPost => ({
-                    ...oldPost,
-                    likes,
-                }));
-            })
-    };
+    //     console.log(user.accessToken);
+
+    //     postService.like(post._id, likedpost, user.accessToken)
+    //         .then((resData) => {
+    //             console.log(resData);
+    //             setPost(oldPost => ({
+    //                 ...oldPost,
+    //                 likes,
+    //             }));
+    //         })
+    // };
 
     return (
 
         <section className={styles['details-container']}>
             <article className={styles['details-post']}>
                 <p className={styles['details-post-title']}>{post.title}</p>
-                <p className={styles['details-post-text']}>
-                    {post.text}
-
-                </p>
+                <p className={styles['details-post-text']}>{post.text}</p>
 
             </article>
             <article className={styles['details-post-ownerInfo']} >
@@ -78,7 +77,7 @@ const Details = () => {
 
 
             </article>
-            {user._id && (user._id == post._ownerId
+            {user._id && (user._id == post._ownerId)
                 ?
                 (
                     <>
@@ -87,8 +86,8 @@ const Details = () => {
 
                     </>
                 )
-                : <button className={styles['like-btn']} onClick={likeButtonClick}>Like</button>
-            )}
+                : <button className={styles['like-btn']} >Like</button>
+            }
 
 
             <DeleteModal
