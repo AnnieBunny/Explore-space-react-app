@@ -72,7 +72,15 @@ const Details = () => {
             <article className={styles['details-post-ownerInfo']} >
                 <p className={styles['details-post-username']}><strong>Authour: </strong> {post.userName}</p>
                 <p className={styles['details-post-likes']}><strong>Created on: </strong>{`${new Date(post._createdOn)}`.slice(4, 24)}</p>
-                <p className={styles['details-post-likes']}>Likes: {post.likes?.length}</p>
+                {post._updatedOn
+
+                    ?
+                    <p className={styles['details-post-likes']}><strong>Updated on: </strong>{`${new Date(post._updatedOn)}`.slice(4, 24)}</p>
+
+                    :
+                    null
+                }
+
 
 
 
