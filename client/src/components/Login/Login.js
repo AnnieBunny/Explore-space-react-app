@@ -4,7 +4,7 @@ import styles from './Login.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRocket } from '@fortawesome/free-solid-svg-icons'
 
-import { useContext } from 'react';
+import { useContext, useState} from 'react';
 
 import * as authService from '../../services/authService';
 import { useNavigate } from 'react-router';
@@ -18,6 +18,7 @@ toast.configure()
 
 const Login = () => {
     const { login } = useContext(AuthContext);
+
 
     let navigate = useNavigate();
     const onLoginSubmit = (e) => {
@@ -54,6 +55,7 @@ const Login = () => {
         console.log(11111);
     };
 
+  
     return (
         <>
             <article className={styles["rocket-icon"]}>
@@ -66,8 +68,8 @@ const Login = () => {
                     <label for="email-info">Email</label>
                     <input type="text" className={styles["email-info"]} name="email" onBlur={onEmailValidation} />
                     <label for="password-info">Password</label>
-                    <input type="password" className={styles["password-info"]} name="password" />
-                    <button type="submit" className={styles["submit-button"]}>Submit</button>
+                    <input type="password" className={styles["password-info"]} name="password"  />
+                    <button type="submit" className={styles["submit-button"]} >Submit</button>
                 </form>
             </article>
 
