@@ -94,7 +94,7 @@ const Details = () => {
 
                     </>
                 )
-                : <button className={styles['like-btn']} >Like</button>
+                : null
             }
 
 

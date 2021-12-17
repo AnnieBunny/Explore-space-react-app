@@ -42,7 +42,7 @@ const Create = () => {
 
             toast.error("Too short symbols. Must have more than 5 symobls!")
         }  else{
-            setDisabledBtn(false)
+            setDisabledBtn(false);
         }
       
     };

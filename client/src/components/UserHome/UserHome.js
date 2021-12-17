@@ -14,7 +14,7 @@ const UserHome = () => {
     useEffect(() => {
         postService.getAllPosts()
             .then((res) => {
-               
+
                 setPosts(res)
             })
             .catch((err) => console.log(err));
@@ -25,28 +25,34 @@ const UserHome = () => {
     return (
         <>
 
-            {
-                posts.length > 0
-                    ?
-                    (
-                        <section className={styles['blog-cards']}>
-                            {posts.map(x => <PostCard key={x._id} post={x} />)}
-                        </section>
-                    )
-                    :
-                    (
-                        <>
-                            <p className={styles['no-post-text']}>No posts here!</p>
-                            <p className={styles['no-post-text']}>Make first post!</p>
+            <div className={styles['container']}>
+                {/* <img src="/planets.jpg"></img> */}
 
-                            <article className={styles['btn-container']} >
-                                <Link className={styles['add-new-post-btn']} to="/create">ADD POST</Link>
+                {
+                    posts.length > 0
+                        ?
+                        (
+                            <section className={styles['blog-cards']}>
+                                {posts.map(x => <PostCard key={x._id} post={x} />)}
+                            </section>
+                        )
+                        :
+                        (
+                            <>
+                       
+                                    <p className={styles['no-post-text']}>No posts here!</p>
+                                    <p className={styles['no-post-text']}>Make first post!</p>
 
-                            </article>
-                        </>
-                    )
-            }
+                                    <article className={styles['btn-container']} >
+                                        <Link className={styles['add-new-post-btn']} to="/create">ADD POST</Link>
 
+                                    </article>
+                               
+
+                            </>
+                        )
+                }
+            </div>
         </>
 
     )

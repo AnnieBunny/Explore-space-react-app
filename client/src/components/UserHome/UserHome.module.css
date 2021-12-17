@@ -1,11 +1,22 @@
-body{
-    background-color: black;
-}
+.container {
+    background-image: url("planets.jpg");
+    width: 60vw;
+   min-height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+
 
 
 .blog-cards {
     display: flex;
     flex-direction: column;
+    flex-basis: 100px;
+	flex-grow: 0;
+	flex-shrink: 0;
 }
 
 .no-post-text {
@@ -30,3 +41,4 @@ body{
 
     padding: 20px 30px;
 }
+
