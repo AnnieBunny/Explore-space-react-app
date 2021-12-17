@@ -53,19 +53,14 @@ function App() {
         <Route exact path="/myPosts" element={<MyPosts />}></Route>
         <Route exact path="/details/:postId" element={<Details />}></Route>
         <Route exact path="/details/edit/:postId" element={<Edit />}></Route>
+   
 
 
         <Route exact path="/create" element={<Create />}></Route>
         <Route exact path="/getSpacePhoto" element={<NasaSpacePhoto />}></Route>
 
-
-
-
-
-
-
-
       </Routes>
+
     </div>
     </AuthContext.Provider>
   );

@@ -28,7 +28,7 @@ const About = () => {
                             />
                             <Carousel.Caption>
                                 <h3 className={styles['first-slide-label']}>Blog page</h3>
-                                <p>You can post, like, edit and delete your own posts.</p>
+                                <p>You can post, edit and delete your own posts.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -43,18 +43,7 @@ const About = () => {
                                 <p>You can see every single day a picture with details from NASA.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                className="d-block w-100 h-100"
-                                src="https://c4.wallpaperflare.com/wallpaper/967/372/978/gray-simple-background-gradient-wallpaper-thumb.jpg"
-                                alt="Third slide"
-                            />
-
-                            <Carousel.Caption>
-                                <h3 className={styles['first-slide-label']}>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
+                        
                     </Carousel>
                 </article>
 
