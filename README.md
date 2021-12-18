@@ -16,6 +16,8 @@ surprises!
 
 * UI & UX
 
+* Validations and error handling
+
 
 # How to run
 
